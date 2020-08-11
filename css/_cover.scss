@@ -1,0 +1,29 @@
+main 
+{
+    width: 100%;
+    section 
+    {
+        width: 100%;
+        .cover 
+        {
+            width: 100%;
+            //cover styles for mobile
+        }
+    }
+}
+@media (min-width:700px)
+{
+    main 
+    {
+        width: 100%;
+        section 
+        {
+            width: 100%;
+            .cover 
+            {
+                width: 100%;
+                //cover styles for system
+            }
+        }
+    }
+}

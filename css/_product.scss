@@ -1,0 +1,29 @@
+main 
+{
+    width: 100%;
+    section 
+    {
+        width: 100%;
+        .product 
+        {
+            width: 100%;
+            //product styles for mobile
+        }
+    }
+}
+@media (min-width:700px)
+{
+    main 
+    {
+        width: 100%;
+        section 
+        {
+            width: 100%;
+            .product 
+            {
+                width: 100%;
+                //product styles for system
+            }
+        }
+    }
+}

@@ -1,0 +1,136 @@
+header {
+  width: 100%;
+}
+
+header section {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+main section {
+  width: 100%;
+}
+
+main section .cover {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  main {
+    width: 100%;
+  }
+  main section {
+    width: 100%;
+  }
+  main section .cover {
+    width: 100%;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+main section {
+  width: 100%;
+}
+
+main section .strength {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  main {
+    width: 100%;
+  }
+  main section {
+    width: 100%;
+  }
+  main section .strength {
+    width: 100%;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+main section {
+  width: 100%;
+}
+
+main section .product {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  main {
+    width: 100%;
+  }
+  main section {
+    width: 100%;
+  }
+  main section .product {
+    width: 100%;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+main section {
+  width: 100%;
+}
+
+main section .testimonial {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  main {
+    width: 100%;
+  }
+  main section {
+    width: 100%;
+  }
+  main section .team {
+    width: 100%;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+main section {
+  width: 100%;
+}
+
+main section .team {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  main {
+    width: 100%;
+  }
+  main section {
+    width: 100%;
+  }
+  main section .team {
+    width: 100%;
+  }
+}
+
+footer {
+  width: 100%;
+}
+
+footer section {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+main 
+{
+    width: 100%;
+    section 
+    {
+        width: 100%;
+        .testimonial
+        {
+            width: 100%;
+            //testimonial styles for mobile
+        }
+    }
+}
+@media (min-width:700px)
+{
+    main 
+    {
+        width: 100%;
+        section 
+        {
+            width: 100%;
+            .team
+            {
+                width: 100%;
+                //testimonial styles for system
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+main 
+{
+    width: 100%;
+    section 
+    {
+        width: 100%;
+        .strength
+        {
+            width: 100%;
+            //strength styles for mobile
+        }
+    }
+}
+@media (min-width:700px)
+{
+    main 
+    {
+        width: 100%;
+        section 
+        {
+            width: 100%;
+            .strength 
+            {
+                width: 100%;
+                //strength styles for system
+            }
+        }
+    }
+}

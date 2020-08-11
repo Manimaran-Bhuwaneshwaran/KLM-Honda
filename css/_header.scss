@@ -1,0 +1,19 @@
+header 
+{
+    width: 100%;
+    section 
+    {
+        width: 100%;
+        //header styles for mobile
+    }
+}
+@media (min-width:700px)
+{
+    header 
+    {
+        section 
+        {
+            //header styles for systems
+        }
+    }
+}

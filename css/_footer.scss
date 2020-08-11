@@ -1,0 +1,19 @@
+footer
+{
+    width: 100%;
+    section 
+    {
+        width: 100%;
+        //footer styles for mobile
+    }
+}
+@media (min-width:700px)
+{
+    footer 
+    {
+        section 
+        {
+            //footer styles for systems
+        }
+    }
+}
