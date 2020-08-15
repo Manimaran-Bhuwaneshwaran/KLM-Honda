@@ -7,7 +7,54 @@ main
         .cover 
         {
             width: 100%;
-            //cover styles for mobile
+            .cover-slider
+            {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                position: relative;
+                justify-content: center;
+                .button
+                {
+                    display: none;
+                    span 
+                    {
+                        font-size: 150%;
+                        font-weight: bold;
+                        cursor: pointer;
+                        padding: 2.5px;
+                    }
+                }
+                .images
+                {
+                    width: 100%;
+                    height: auto;
+                    img 
+                    {
+                        width: 100%;
+                    }
+                }
+                .dots
+                {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    .dot 
+                    {
+                        width: 5px;
+                        height: 5px;
+                        margin: 10px 5px;
+                        border-radius: 50%;
+                        background: white;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
     }
 }
@@ -15,14 +62,30 @@ main
 {
     main 
     {
-        width: 100%;
         section 
         {
-            width: 100%;
             .cover 
             {
-                width: 100%;
-                //cover styles for system
+                .cover-slider
+                {
+                    .button
+                    {
+                        display: block;
+                    }
+                    .images
+                    {
+                        width: 90%;
+                        max-width: 1200px;
+                    }
+                    .dots
+                    {
+                        .dot 
+                        {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
             }
         }
     }

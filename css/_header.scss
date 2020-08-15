@@ -1,19 +1,375 @@
+body 
+{
+    padding: 0;
+    margin: 0;
+    font-size: 80%;
+    font-family: 'Libre Baskerville', serif;
+}
+a 
+{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 header 
 {
     width: 100%;
     section 
     {
         width: 100%;
-        //header styles for mobile
+        .header-top-social
+        {
+            width: 100%;
+            padding: 10px 0;
+            background: #DD3333;
+            .contact-no
+            {
+                width: 100%;
+                text-align: center;
+                a 
+                {
+                    display: block;
+                    color: #B9B4B4;
+                    font-weight: bold;
+                    margin: 5px 0;
+                    font-size: 80%;
+                }
+            }
+            .social-media-handles
+            {
+                width: 100%;
+                text-align: center;
+                a,img 
+                {
+                    width: 30px;
+                    height: 30px;
+                }
+                img 
+                {
+                    width: 15px;
+                    height: 15px;
+                    padding: 7.5px;
+                    filter: grayscale(100%) invert(100%);
+                }
+            }
+        }
+        .header-body
+        {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .logo
+            {
+                width: 70px;
+                height: 70px;
+                padding-left: 10px;
+                img 
+                {
+                    width: 50px;
+                    height: 50px;
+                    padding: 10px;
+                }
+            }
+            .menu
+            {
+                flex-grow: 1;
+                .mob
+                {
+                    width: 100%;
+                    .menu-icon
+                    {
+                        width: 100%;
+                        text-align: right;
+                        img 
+                        {
+                            width: 35px;
+                            height: 25px;
+                            margin: 15px 20px;
+                            cursor: pointer;
+                        }
+                    }
+                    .drop-down,.show
+                    {
+                        text-align: left;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 60%;
+                        max-width: 350px;
+                        min-height: 100vh;
+                        height: auto;
+                        background: rgb(255, 255, 255);
+                        animation: inOut 2s;
+                        display: none;
+                        ul 
+                        {
+                            padding-left: 20px;
+                            li 
+                            {
+                                padding: 10px 0;
+                                a 
+                                {
+                                    color: rgba(0,0,0,0.8);
+                                    span 
+                                    {
+                                        font-size: 150%;
+                                        font-weight: bold;
+                                        opacity: 0.8;
+                                        transition: opacity 1s;
+                                        color: black;
+                                        padding: 0 5px;
+                                    }
+                                    span:hover 
+                                    {
+                                        opacity: 1;
+                                    }
+                                    h4
+                                    {
+                                        margin: 0;
+                                        display: inline;
+                                    }
+                                }
+                                label 
+                                {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+                                    width: 90%;
+                                    margin-top: 30px;
+                                    input 
+                                    {
+                                        padding: 2.5px 10px;
+                                        border: 0;
+                                        outline: 0;
+                                        font-family: inherit;
+                                        font-size: inherit;
+                                        background: transparent;
+                                        width: 70%;
+                                    }
+                                    span 
+                                    {
+                                        transform: rotate(90deg);
+                                        font-size: 170%;
+                                        padding: 0 5px;
+                                        color: rgba(0,0,0,0.7);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .show
+                    {
+                        display: block;
+                    }
+                }
+                .sys 
+                {
+                    width: 0;
+                    height: 0;
+                    overflow: hidden;
+                    .menu-list
+                    {
+                        width: 100%;
+                        ul 
+                        {
+                            li 
+                            {
+                                display: inline;
+                                a 
+                                {
+                                    display: inline;
+                                    padding: 5px 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .head-dec
+    {
+        width: 100%;
+        height: 1.25px;
+        background: #DD3333;
+    }
+}
+@keyframes inOut
+{
+    0%
+    {
+        left: -100%;
+    }
+    100% 
+    {
+        left:0;
+        display: block;
+    }
+}
+@keyframes outIn
+{
+    0%
+    {
+        left: 0;
+    }
+    100% 
+    {
+        left:-100%;
+        display: none;
     }
 }
 @media (min-width:700px)
+{
+    body 
+    {
+        font-size: 90%;
+    }
+    header 
+    {
+        section 
+        {
+            .header-top-social
+            {
+                width: 100%;
+                padding: 10px 0;
+                background: #DD3333;
+                display: flex;
+                flex-wrap: wrap;
+                .contact-no
+                {
+                    width: 50%;
+                    text-align: left;
+                    padding-left: 30px;
+                    box-sizing: border-box;
+                    a 
+                    {
+                        display: block;
+                        color: #B9B4B4;
+                        font-weight: bold;
+                        margin: 5px 0;
+                        font-size: 90%;
+                    }
+                }
+                .social-media-handles
+                {
+                    width: 50%;
+                    text-align:right;
+                    padding-right: 30px;
+                    box-sizing: border-box;
+                    a,img 
+                    {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    img 
+                    {
+                        width: 20px;
+                        height: 20px;
+                        padding: 5px;
+                    }
+                }
+            }
+            .header-body
+            {
+                .logo
+                {
+                    width: 70px;
+                    height: 70px;
+                    padding-left: 30px;
+                    img 
+                    {
+                        width: 70px;
+                        height: 70px;
+                        padding: 0;
+                    }
+                }
+                .menu
+                {
+                    flex-grow: 1;
+                    .mob
+                    {
+                        width: 100%;
+                        .menu-icon
+                        {
+                            width: 100%;
+                            text-align: right;
+                            box-sizing: border-box;
+                            padding-right: 10px;
+                            img 
+                            {
+                                width: 35px;
+                                height: 25px;
+                                margin: 20px 20px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .head-dec
+        {
+            height: 2px;
+        }
+    }
+}
+@media (min-width:1200px)
 {
     header 
     {
         section 
         {
-            //header styles for systems
+            .header-body
+            {
+                .menu
+                {
+                    flex-grow: 1;
+                    .mob
+                    {
+                        display: none;
+                    }
+                    .sys 
+                    {
+                        width: 100%;
+                        height: auto;
+                        text-align: right;
+                        ul 
+                        {
+                            padding: 20px 30px 20px 0;
+                            li 
+                            {
+                                padding: 10px;
+                                a 
+                                {
+                                    color: inherit;
+                                }
+                            }
+                            li:hover 
+                            {
+                                color: rgba(0,0,0,0.7);
+                            }
+                            li#special 
+                            {
+                                background: #DD3333;
+                                color: white;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .head-dec
+        {
+            width: 100%;
+            height: 1.25px;
+            background: #DD3333;
         }
     }
 }

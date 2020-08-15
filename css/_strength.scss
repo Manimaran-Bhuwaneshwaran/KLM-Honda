@@ -7,22 +7,161 @@ main
         .strength
         {
             width: 100%;
-            //strength styles for mobile
+            section
+            {
+                width: 100%;
+                .strength-title
+                {
+                    width: 90%;
+                    padding: 0 5%;
+                    h2 
+                    {
+                        margin: 10px 0;
+                        text-align: center;
+                    }
+                    p 
+                    {
+                        margin: 0;
+                        margin-bottom: 10px;
+                        color: #D33;
+                        text-align: center;
+                    }
+                }
+                .strength-body
+                {
+                    width: 90%;
+                    padding: 0 5%;
+                    .strength-element
+                    {
+                        width: 100%;
+                        .el-title
+                        {
+                            width: 100%;
+                            background: #D33;
+                            h3 
+                            {
+                                margin: 0;
+                                padding: 10px 10px;
+                                text-align: center;
+                                color: white;
+                                letter-spacing: 1px;
+                            }
+                        }
+                        .el-body
+                        {
+                            width: 100%;
+                            overflow: hidden;
+                            img 
+                            {
+                                width: 100%;
+                            }
+                            .st-slide
+                            {
+                                width: 100%;
+                                animation: in 1s;
+                                transform-origin: right;
+                            }
+                        }
+                        .count 
+                        {
+                            background: rgba(0, 0, 0, 0.5);
+                            padding: 20px 0;
+                            h3,p 
+                            {
+                                margin: 30px 0;
+                                text-align: center;
+                            }
+                            h3 
+                            {
+                                font-size: 200%;
+                            }
+                            p 
+                            {
+                                color: white;
+                                text-transform: uppercase;
+                            }
+                        }
+                        .el-description
+                        {
+                            width: 100%;
+                            text-align: center;
+                            img 
+                            {
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
         }
+    }
+}
+@keyframes in 
+{
+    0% 
+    {
+        opacity: 0.7;
+        transform: translateX(100%);
+    }
+    100% 
+    {
+        opacity: 1;
     }
 }
 @media (min-width:700px)
 {
     main 
     {
-        width: 100%;
         section 
         {
-            width: 100%;
-            .strength 
+            .strength
             {
-                width: 100%;
-                //strength styles for system
+                section
+                {
+                    .strength-body
+                    {
+                        width: 90%;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .strength-element
+                        {
+                            width: 31.33%;
+                            margin: 1%;
+                            box-sizing: border-box;
+                            .count 
+                            {
+                                padding: 2.5% 0;
+                                h3,p 
+                                {
+                                    margin: 5% 0;
+                                    text-align: center;
+                                }
+                                h3 
+                                {
+                                    font-size: 120%;
+                                }
+                                p 
+                                {
+                                    color: white;
+                                    text-transform: capitalize;
+                                }
+                            }
+                            .el-description
+                            {
+                                width: 100%;
+                                text-align: center;
+                                img 
+                                {
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

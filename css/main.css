@@ -1,9 +1,372 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 80%;
+  font-family: 'Libre Baskerville', serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 header {
   width: 100%;
 }
 
 header section {
   width: 100%;
+}
+
+header section .header-top-social {
+  width: 100%;
+  padding: 10px 0;
+  background: #DD3333;
+}
+
+header section .header-top-social .contact-no {
+  width: 100%;
+  text-align: center;
+}
+
+header section .header-top-social .contact-no a {
+  display: block;
+  color: #B9B4B4;
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 80%;
+}
+
+header section .header-top-social .social-media-handles {
+  width: 100%;
+  text-align: center;
+}
+
+header section .header-top-social .social-media-handles a, header section .header-top-social .social-media-handles img {
+  width: 30px;
+  height: 30px;
+}
+
+header section .header-top-social .social-media-handles img {
+  width: 15px;
+  height: 15px;
+  padding: 7.5px;
+  -webkit-filter: grayscale(100%) invert(100%);
+          filter: grayscale(100%) invert(100%);
+}
+
+header section .header-body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header section .header-body .logo {
+  width: 70px;
+  height: 70px;
+  padding-left: 10px;
+}
+
+header section .header-body .logo img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+header section .header-body .menu {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header section .header-body .menu .mob {
+  width: 100%;
+}
+
+header section .header-body .menu .mob .menu-icon {
+  width: 100%;
+  text-align: right;
+}
+
+header section .header-body .menu .mob .menu-icon img {
+  width: 35px;
+  height: 25px;
+  margin: 15px 20px;
+  cursor: pointer;
+}
+
+header section .header-body .menu .mob .drop-down, header section .header-body .menu .mob .show {
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60%;
+  max-width: 350px;
+  min-height: 100vh;
+  height: auto;
+  background: white;
+  -webkit-animation: inOut 2s;
+          animation: inOut 2s;
+  display: none;
+}
+
+header section .header-body .menu .mob .drop-down ul, header section .header-body .menu .mob .show ul {
+  padding-left: 20px;
+}
+
+header section .header-body .menu .mob .drop-down ul li, header section .header-body .menu .mob .show ul li {
+  padding: 10px 0;
+}
+
+header section .header-body .menu .mob .drop-down ul li a, header section .header-body .menu .mob .show ul li a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+header section .header-body .menu .mob .drop-down ul li a span, header section .header-body .menu .mob .show ul li a span {
+  font-size: 150%;
+  font-weight: bold;
+  opacity: 0.8;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  color: black;
+  padding: 0 5px;
+}
+
+header section .header-body .menu .mob .drop-down ul li a span:hover, header section .header-body .menu .mob .show ul li a span:hover {
+  opacity: 1;
+}
+
+header section .header-body .menu .mob .drop-down ul li a h4, header section .header-body .menu .mob .show ul li a h4 {
+  margin: 0;
+  display: inline;
+}
+
+header section .header-body .menu .mob .drop-down ul li label, header section .header-body .menu .mob .show ul li label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin-top: 30px;
+}
+
+header section .header-body .menu .mob .drop-down ul li label input, header section .header-body .menu .mob .show ul li label input {
+  padding: 2.5px 10px;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+  width: 70%;
+}
+
+header section .header-body .menu .mob .drop-down ul li label span, header section .header-body .menu .mob .show ul li label span {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 170%;
+  padding: 0 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+header section .header-body .menu .mob .show {
+  display: block;
+}
+
+header section .header-body .menu .sys {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+header section .header-body .menu .sys .menu-list {
+  width: 100%;
+}
+
+header section .header-body .menu .sys .menu-list ul li {
+  display: inline;
+}
+
+header section .header-body .menu .sys .menu-list ul li a {
+  display: inline;
+  padding: 5px 10px;
+}
+
+header .head-dec {
+  width: 100%;
+  height: 1.25px;
+  background: #DD3333;
+}
+
+@-webkit-keyframes inOut {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+    display: block;
+  }
+}
+
+@keyframes inOut {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+    display: block;
+  }
+}
+
+@-webkit-keyframes outIn {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+    display: none;
+  }
+}
+
+@keyframes outIn {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 90%;
+  }
+  header section .header-top-social {
+    width: 100%;
+    padding: 10px 0;
+    background: #DD3333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header section .header-top-social .contact-no {
+    width: 50%;
+    text-align: left;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header section .header-top-social .contact-no a {
+    display: block;
+    color: #B9B4B4;
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 90%;
+  }
+  header section .header-top-social .social-media-handles {
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header section .header-top-social .social-media-handles a, header section .header-top-social .social-media-handles img {
+    width: 30px;
+    height: 30px;
+  }
+  header section .header-top-social .social-media-handles img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+  header section .header-body .logo {
+    width: 70px;
+    height: 70px;
+    padding-left: 30px;
+  }
+  header section .header-body .logo img {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+  }
+  header section .header-body .menu {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  header section .header-body .menu .mob {
+    width: 100%;
+  }
+  header section .header-body .menu .mob .menu-icon {
+    width: 100%;
+    text-align: right;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 10px;
+  }
+  header section .header-body .menu .mob .menu-icon img {
+    width: 35px;
+    height: 25px;
+    margin: 20px 20px;
+    cursor: pointer;
+  }
+  header .head-dec {
+    height: 2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header section .header-body .menu {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  header section .header-body .menu .mob {
+    display: none;
+  }
+  header section .header-body .menu .sys {
+    width: 100%;
+    height: auto;
+    text-align: right;
+  }
+  header section .header-body .menu .sys ul {
+    padding: 20px 30px 20px 0;
+  }
+  header section .header-body .menu .sys ul li {
+    padding: 10px;
+  }
+  header section .header-body .menu .sys ul li a {
+    color: inherit;
+  }
+  header section .header-body .menu .sys ul li:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  header section .header-body .menu .sys ul li#special {
+    background: #DD3333;
+    color: white;
+    border-radius: 5px;
+  }
+  header .head-dec {
+    width: 100%;
+    height: 1.25px;
+    background: #DD3333;
+  }
 }
 
 main {
@@ -18,15 +381,77 @@ main section .cover {
   width: 100%;
 }
 
+main section .cover .cover-slider {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .cover .cover-slider .button {
+  display: none;
+}
+
+main section .cover .cover-slider .button span {
+  font-size: 150%;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 2.5px;
+}
+
+main section .cover .cover-slider .images {
+  width: 100%;
+  height: auto;
+}
+
+main section .cover .cover-slider .images img {
+  width: 100%;
+}
+
+main section .cover .cover-slider .dots {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+main section .cover .cover-slider .dots .dot {
+  width: 5px;
+  height: 5px;
+  margin: 10px 5px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
 @media (min-width: 700px) {
-  main {
-    width: 100%;
+  main section .cover .cover-slider .button {
+    display: block;
   }
-  main section {
-    width: 100%;
+  main section .cover .cover-slider .images {
+    width: 90%;
+    max-width: 1200px;
   }
-  main section .cover {
-    width: 100%;
+  main section .cover .cover-slider .dots .dot {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -42,15 +467,157 @@ main section .strength {
   width: 100%;
 }
 
+main section .strength section {
+  width: 100%;
+}
+
+main section .strength section .strength-title {
+  width: 90%;
+  padding: 0 5%;
+}
+
+main section .strength section .strength-title h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+main section .strength section .strength-title p {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #D33;
+  text-align: center;
+}
+
+main section .strength section .strength-body {
+  width: 90%;
+  padding: 0 5%;
+}
+
+main section .strength section .strength-body .strength-element {
+  width: 100%;
+}
+
+main section .strength section .strength-body .strength-element .el-title {
+  width: 100%;
+  background: #D33;
+}
+
+main section .strength section .strength-body .strength-element .el-title h3 {
+  margin: 0;
+  padding: 10px 10px;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+}
+
+main section .strength section .strength-body .strength-element .el-body {
+  width: 100%;
+  overflow: hidden;
+}
+
+main section .strength section .strength-body .strength-element .el-body img {
+  width: 100%;
+}
+
+main section .strength section .strength-body .strength-element .el-body .st-slide {
+  width: 100%;
+  -webkit-animation: in 1s;
+          animation: in 1s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+main section .strength section .strength-body .strength-element .count {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+}
+
+main section .strength section .strength-body .strength-element .count h3, main section .strength section .strength-body .strength-element .count p {
+  margin: 30px 0;
+  text-align: center;
+}
+
+main section .strength section .strength-body .strength-element .count h3 {
+  font-size: 200%;
+}
+
+main section .strength section .strength-body .strength-element .count p {
+  color: white;
+  text-transform: uppercase;
+}
+
+main section .strength section .strength-body .strength-element .el-description {
+  width: 100%;
+  text-align: center;
+}
+
+main section .strength section .strength-body .strength-element .el-description img {
+  width: 100px;
+}
+
+@-webkit-keyframes in {
+  0% {
+    opacity: 0.7;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes in {
+  0% {
+    opacity: 0.7;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 700px) {
-  main {
-    width: 100%;
+  main section .strength section .strength-body {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  main section {
-    width: 100%;
+  main section .strength section .strength-body .strength-element {
+    width: 31.33%;
+    margin: 1%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  main section .strength {
+  main section .strength section .strength-body .strength-element .count {
+    padding: 2.5% 0;
+  }
+  main section .strength section .strength-body .strength-element .count h3, main section .strength section .strength-body .strength-element .count p {
+    margin: 5% 0;
+    text-align: center;
+  }
+  main section .strength section .strength-body .strength-element .count h3 {
+    font-size: 120%;
+  }
+  main section .strength section .strength-body .strength-element .count p {
+    color: white;
+    text-transform: capitalize;
+  }
+  main section .strength section .strength-body .strength-element .el-description {
     width: 100%;
+    text-align: center;
+  }
+  main section .strength section .strength-body .strength-element .el-description img {
+    width: 100px;
   }
 }
 
@@ -128,9 +695,247 @@ main section .team {
 
 footer {
   width: 100%;
+  background: #54595F;
 }
 
 footer section {
   width: 100%;
+}
+
+footer section .contact {
+  width: 85%;
+  padding: 10% 7.5%;
+}
+
+footer section .contact .contact-title {
+  width: 100%;
+}
+
+footer section .contact .contact-title h2 {
+  margin: 0;
+  padding: 5px 0;
+  color: white;
+  font-weight: normal;
+}
+
+footer section .contact .contact-body {
+  width: 100%;
+}
+
+footer section .contact .contact-body form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer section .contact .contact-body form .row {
+  width: 100%;
+}
+
+footer section .contact .contact-body form .row label {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+footer section .contact .contact-body form .row label span {
+  color: #DD3333;
+}
+
+footer section .contact .contact-body form .row input {
+  width: 100%;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+footer section .contact .contact-body form .row button {
+  padding: 10px 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin: 15px 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #DD3333;
+  color: white;
+}
+
+footer section .map {
+  width: 85%;
+  padding: 0% 7.5%;
+}
+
+footer section .map iframe {
+  width: 100%;
+  height: 400px;
+}
+
+footer section .details {
+  width: 85%;
+  padding: 30px 7.5%;
+}
+
+footer section .details .details-title {
+  width: 100%;
+}
+
+footer section .details .details-title h2 {
+  margin: 0;
+  padding: 5px 0;
+  color: white;
+  font-weight: normal;
+}
+
+footer section .details .details-body {
+  width: 100%;
+}
+
+footer section .details .details-body .dt-el {
+  width: 100%;
+}
+
+footer section .details .details-body .dt-el .img {
+  width: 50px;
+}
+
+footer section .details .details-body .dt-el .img img {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+footer section .details .details-body .dt-el .content {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer section .details .details-body .dt-el .content h3, footer section .details .details-body .dt-el .content p {
+  margin: 10px 0;
+  color: white;
+  font-size: 100%;
+}
+
+footer section .details .details-body .dt-el .content h3 {
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: relative;
+  font-size: 120%;
+  padding-bottom: 10px;
+  text-shadow: 2px 1px 1px #d33;
+}
+
+footer section .details .details-body .dt-el .content h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  margin: 2.5px 0;
+  width: 30%;
+  background: #DD3333;
+}
+
+footer section .details .details-body .dt-el .content p {
+  color: #fff;
+  font-size: 100%;
+  letter-spacing: 1.5px;
+}
+
+footer section .details .details-body .dt-el .content p a {
+  color: inherit;
+}
+
+footer section .details .details-body .social {
+  width: 100%;
+}
+
+footer section .details .details-body .social .content {
+  width: 100%;
+}
+
+footer section .details .details-body .social .content a {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+footer section .details .details-body .social .content a img {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+}
+
+footer p#brand {
+  margin: 0;
+  width: 100%;
+  background: #DD3333;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+
+footer p#brand a {
+  color: inherit;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 700px) {
+  footer section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer section .contact {
+    width: 33.33%;
+    padding: 30px 2.5%;
+    min-width: 300px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  footer section .map {
+    width: 33.33%;
+    padding: 30px 2.5%;
+    min-width: 300px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  footer section .map iframe {
+    width: 100%;
+    height: 400px;
+  }
+  footer section .details {
+    width: 33.33%;
+    padding: 30px 2.5%;
+    min-width: 300px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  footer section .details .details-body {
+    width: 100%;
+  }
+  footer section .details .details-body .dt-el {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=main.css.map */
