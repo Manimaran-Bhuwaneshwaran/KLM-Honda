@@ -631,17 +631,112 @@ main section {
 
 main section .product {
   width: 100%;
+  padding: 30px 0;
+}
+
+main section .product .product-title {
+  width: 90%;
+  padding: 0 5%;
+}
+
+main section .product .product-title h2 {
+  font-size: 200%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+main section .product .product-title p {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #D33;
+  text-align: center;
+}
+
+main section .product .product-body {
+  width: 90%;
+  padding: 0 5%;
+}
+
+main section .product .product-body .product-group {
+  width: 100%;
+}
+
+main section .product .product-body .product-group .product-el {
+  text-align: center;
+  width: 95%;
+  margin: 30px 0;
+  padding: 30px 2.5%;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+main section .product .product-body .product-group .product-el img {
+  width: 100%;
+}
+
+main section .product .product-body .product-group .product-el p {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+main section .product .product-body .product-group .product-el a {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 20px;
+  background: #FF3B3F;
+  color: white;
+  border-radius: 5px;
 }
 
 @media (min-width: 700px) {
-  main {
-    width: 100%;
+  main section .product .product-body {
+    width: 90%;
+    padding: 0;
+    max-width: 1200px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 auto;
   }
-  main section {
-    width: 100%;
+  main section .product .product-body .product-group {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  main section .product {
-    width: 100%;
+  main section .product .product-body .product-group .product-el {
+    text-align: center;
+    width: 45%;
+    margin: 2.5%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1024px) {
+  main section .product .product-body .product-group {
+    overflow: hidden;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section .product .product-body .product-group .product-el {
+    text-align: center;
+    width: 22%;
+    margin: 1.5%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main section .product .product-body .bikes {
+    pointer-events: visible;
+  }
+  main section .product .product-body .bikes ::-webkit-scrollbar {
+    width: 20px;
+    height: 30px;
   }
 }
 
@@ -655,17 +750,177 @@ main section {
 
 main section .testimonial {
   width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../img/latest-bike-3.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/latest-bike-3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+main section .testimonial section {
+  width: 100%;
+}
+
+main section .testimonial section .testimonial-review {
+  width: 90%;
+  padding: 0 5%;
+}
+
+main section .testimonial section .testimonial-review .re-title {
+  width: 100%;
+  background: #999;
+  text-align: center;
+  padding: 30px 0;
+  border: 5px solid rgba(0, 0, 0, 0.4);
+}
+
+main section .testimonial section .testimonial-review .re-title img {
+  width: 100px;
+}
+
+main section .testimonial section .testimonial-review .re-title h2 {
+  margin: 0;
+}
+
+main section .testimonial section .testimonial-review .re-title .re-dec {
+  width: 80%;
+  height: 5px;
+  background: #d33;
+  margin: 10px auto;
+}
+
+main section .testimonial section .testimonial-review .re-body {
+  width: 100%;
+}
+
+main section .testimonial section .testimonial-review .re-body img {
+  width: 100%;
+  height: 50px;
+  margin: 5px 0;
+}
+
+main section .testimonial section .testimonial-content {
+  width: 90%;
+  padding: 30px 5%;
+  background: white;
+}
+
+main section .testimonial section .testimonial-content .ts-title {
+  width: 100%;
+}
+
+main section .testimonial section .testimonial-content .ts-title h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+main section .testimonial section .testimonial-content .ts-title p {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #D33;
+  text-align: center;
+}
+
+main section .testimonial section .testimonial-content .ts-body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section .testimonial section .testimonial-content .ts-body img {
+  width: 50px;
+}
+
+main section .testimonial section .testimonial-content .ts-body h3, main section .testimonial section .testimonial-content .ts-body p {
+  margin: 10px 0;
+  padding: 0 20px;
 }
 
 @media (min-width: 700px) {
-  main {
+  main section .testimonial {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100px 100px;
+  }
+  main section .testimonial section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    padding: 0 2.5%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  main section .testimonial section .testimonial-review {
+    width: 40%;
+    padding: 10% 5%;
+  }
+  main section .testimonial section .testimonial-review .re-title {
+    width: 100%;
+    background: #999;
+    text-align: center;
+    padding: 30px 0;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+  }
+  main section .testimonial section .testimonial-review .re-title img {
+    width: 100px;
+  }
+  main section .testimonial section .testimonial-review .re-title h2 {
+    margin: 0;
+  }
+  main section .testimonial section .testimonial-review .re-title .re-dec {
+    width: 80%;
+    height: 5px;
+    background: #d33;
+    margin: 10px auto;
+  }
+  main section .testimonial section .testimonial-review .re-body {
     width: 100%;
   }
-  main section {
+  main section .testimonial section .testimonial-review .re-body img {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+  }
+  main section .testimonial section .testimonial-content {
+    width: 40%;
+    padding: 10% 5%;
+    background: white;
+  }
+  main section .testimonial section .testimonial-content .ts-title {
     width: 100%;
   }
-  main section .team {
+  main section .testimonial section .testimonial-content .ts-title h2 {
+    font-size: 200%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  main section .testimonial section .testimonial-content .ts-title p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #D33;
+    text-align: center;
+  }
+  main section .testimonial section .testimonial-content .ts-body {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section .testimonial section .testimonial-content .ts-body img {
+    width: 100px;
+  }
+  main section .testimonial section .testimonial-content .ts-body h3, main section .testimonial section .testimonial-content .ts-body p {
+    margin: 20px 0;
+    padding: 0 20px;
   }
 }
 
@@ -679,6 +934,88 @@ main section {
 
 main section .team {
   width: 100%;
+  background-image: url("../img/wavehead.png");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+main section .team .team-title {
+  width: 90%;
+  padding: 30px 5%;
+}
+
+main section .team .team-title h2 {
+  font-size: 200%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+main section .team .team-title p {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #D33;
+  text-align: center;
+}
+
+main section .team .team-body {
+  width: 90%;
+  padding: 0 5%;
+}
+
+main section .team .team-body .team-el {
+  width: 95%;
+  padding: 20px 2.5%;
+  margin: 20px 0;
+}
+
+main section .team .team-body .team-el img {
+  width: 95%;
+}
+
+main section .team .team-body .team-el h2, main section .team .team-body .team-el p {
+  margin: 10px 0;
+}
+
+main section .team .team-body .team-el .pos {
+  color: red;
+}
+
+main section .team .team-body .team-el .team-dec {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+main section .team .team-body .team-el .social-links {
+  width: 100%;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .team .team-body .team-el .social-links a {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  display: block;
+}
+
+main section .team .team-body .team-el .social-links a img {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+main section .bottom-team-dec {
+  width: 100%;
+  margin-bottom: -3px;
 }
 
 @media (min-width: 700px) {
@@ -689,7 +1026,79 @@ main section .team {
     width: 100%;
   }
   main section .team {
+    padding-top: 70px;
+  }
+  main section .team .team-title {
+    padding: 70px 5%;
+  }
+  main section .team .team-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  main section .team .team-body .team-el {
+    width: 45%;
+    padding: 0;
+    margin: 2.5%;
+  }
+  main section .team .team-body .team-el img {
+    width: 95%;
+  }
+  main section .team .team-body .team-el h2, main section .team .team-body .team-el p {
+    margin: 10px 0;
+  }
+  main section .team .team-body .team-el .pos {
+    color: red;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
     width: 100%;
+  }
+  main section {
+    width: 100%;
+  }
+  main section .team {
+    background-size: 100% 200px;
+  }
+  main section .team .team-title {
+    padding: 50px 5%;
+  }
+  main section .team .team-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  main section .team .team-body .team-el {
+    width: 22%;
+    padding: 0;
+    margin: 1.5%;
+  }
+  main section .team .team-body .team-el img {
+    width: 100%;
+  }
+  main section .team .team-body .team-el h2, main section .team .team-body .team-el p {
+    margin: 10px 0;
+  }
+  main section .team .team-body .team-el .pos {
+    color: red;
+  }
+  main section .bottom-team-dec {
+    width: 100%;
+    height: 150px;
+    margin-bottom: -10px;
   }
 }
 

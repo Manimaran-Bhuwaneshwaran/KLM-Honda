@@ -42,26 +42,22 @@ function autoCoverSlider()
     setTimeout(autoCoverSlider,5000);
 }
 
+
 var strengthIndex = 0;
 coverSlider(strengthIndex);
-function plus(n) 
-{
-    strengthSlider(strengthIndex += n);
-    console.log(strengthIndex)
-}
 function strengthSlider(n)
 {
-    var slides=document.getElementsByClassName("clients");
+    var Sslides=document.getElementsByClassName("clients");
     var slides1=document.getElementsByClassName("latest");
     var i;
-    if (n > slides.length-1) {strengthIndex = 0}
-    if (n < 0) {strengthIndex = slides.length-1}
-    for(i=0;i<slides.length;i++)
+    if (n > Sslides.length-1) {strengthIndex = 0}
+    if (n < 0) {strengthIndex = Sslides.length-1}
+    for(i=0;i<Sslides.length;i++)
     {
-        slides[i].style.display="none";
+        Sslides[i].style.display="none";
         slides1[i].style.display="none";
     }
-    slides[strengthIndex].style.display="block";
+    Sslides[strengthIndex].style.display="block";
     slides1[strengthIndex].style.display="block";
 }
 autostrengthSlider()

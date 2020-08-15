@@ -7,7 +7,61 @@ main
         .product 
         {
             width: 100%;
-            //product styles for mobile
+            padding: 30px 0;
+            .product-title
+            {
+                width: 90%;
+                padding: 0 5%;
+                h2 
+                {
+                    font-size: 200%;
+                    margin: 10px 0;
+                    text-align: center;
+                }
+                p 
+                {
+                    margin: 0;
+                    margin-bottom: 10px;
+                    color: #D33;
+                    text-align: center;
+                }
+            }
+            .product-body
+            {
+                width: 90%;
+                padding: 0 5%;
+                .product-group
+                {
+                    width: 100%;
+                    .product-el
+                    {
+                        text-align: center;
+                        width: 95%; 
+                        margin: 30px 0;
+                        padding: 30px 2.5%;
+                        box-shadow: inset 1px 1px 1px rgba(0,0,0,0.4),inset -1px -1px 1px rgba(0,0,0,0.4);
+                        border-radius: 5px;
+                        img 
+                        {
+                            width: 100%;
+                        }
+                        p 
+                        {
+                            color: rgba(0,0,0,0.8);
+                        }
+                        a 
+                        {
+                            width: 100px;
+                            margin: 0 auto;
+                            display: block;
+                            padding: 10px 20px;
+                            background: #FF3B3F;
+                            color: white;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -15,14 +69,68 @@ main
 {
     main 
     {
-        width: 100%;
         section 
         {
-            width: 100%;
             .product 
             {
-                width: 100%;
-                //product styles for system
+                .product-body
+                {
+                    width: 90%;
+                    padding: 0;
+                    max-width: 1200px;
+                    box-sizing: border-box;
+                    margin: 0 auto;
+                    .product-group
+                    {
+                        max-width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .product-el
+                        {
+                            text-align: center;
+                            width: 45%;
+                            margin: 2.5%;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:1024px)
+{
+    main 
+    {
+        section 
+        {
+            .product 
+            {
+                .product-body
+                {
+                    .product-group
+                    {
+                        overflow: hidden;
+                        justify-content: center;
+                        .product-el
+                        {
+                            text-align: center;
+                            width: 22%;
+                            margin: 1.5%;
+                            box-sizing: border-box;
+                            box-shadow: none;
+                        }
+                    }
+                    .bikes
+                    {
+                        pointer-events: visible;
+                        ::-webkit-scrollbar
+                        {
+                            width: 20px;
+                            height: 30px;
+                        }
+                    }
+                }
             }
         }
     }
